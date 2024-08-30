@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Card Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .card-form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .card-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .card-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        .card-form input[type="text"],
+        .card-form input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .card-form input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-form">
+        <h2>PAN Card Details</h2>
+        <form>
+            <!-- Full Name -->
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- PAN Number -->
+            <label for="panNumber">PAN Number:</label>
+            <input type="text" id="panNumber" name="panNumber" placeholder="ABCDE1234F" required>
+
+            <!-- Father's Name -->
+            <label for="fatherName">Father's Name:</label>
+            <input type="text" id="fatherName" name="fatherName" placeholder="Enter your father's name" required>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
